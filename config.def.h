@@ -27,7 +27,7 @@ static char normbgcolor[]                    = "#222222";
 static char normbordercolor[]                = "#444444";
 static char normfgcolor[]                    = "#bbbbbb";
 static char selfgcolor[]                     = "#eeeeee";
-static char selbordercolor[]                 = "#005577";
+static char selbordercolor[]                 = "#fabd2f";
 static char selbgcolor[]                     = "#005577";
 static char *colors[][3] = {
        /*               fg           bg           border   */
@@ -159,7 +159,6 @@ static const Key keys[] = {
 	{ MODKEY,                     XK_Return,      spawn,           {.v = termcmd } },
 	{ MODKEY|ShiftMask,           XK_Return,      zoom,            {0} },
 	{ MODKEY,                     XK_b,           togglebar,       {0} },
-    { MODKEY|ShiftMask,           XK_b,           toggleborder,    {0} },
 	{ MODKEY,                     XK_h,           setmfact,        {.f = -0.05} },
 	{ MODKEY,                     XK_l,           setmfact,        {.f = +0.05} },
 	{ MODKEY|Mod1Mask,            XK_u,           incrgaps,        {.i = +1 } },
